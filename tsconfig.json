@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module":"CommonJS",
+    "esModuleInterop": true, 
+    "target": "ES2022",
+    "noImplicitAny": true,
+    "moduleResolution":"node",
+    "sourceMap": false,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "importHelpers": true,
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "composite": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true, 
+    "isolatedModules": true
+  },
+  "files": [
+    "./src/index.ts"
+  ],
+  "references": [
+    {
+      "path": "./src/packages/validatorHelper"
+    }
+  ],
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/tests/*", "**/*.test.tsx?", "**/*.stories.ts", "**/*.mock.ts"]
+}
